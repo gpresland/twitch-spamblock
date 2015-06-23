@@ -1,0 +1,19 @@
+{
+    "curly": true,
+    "devel": true,
+    "indent": 4,
+    "node": false,
+    "undef": true,
+    "unused": true,
+    "globals": {
+        "$": true,
+        "chrome": true,
+        "clearTimeout": true,
+        "document": true,
+        "require": false,
+        "setTimeout": true,
+        "settings": true,
+        "tsb": true,
+        "window": true
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "manifest_version": 2,
+
+    "name": "Twitch SpamBlock",
+    "description": "This extension shows a Google Image search result for the current page",
+    "version": "0.0",
+
+    "browser_action": {
+        "default_icon": "images/logo_32.png",
+        "default_title": "Twitch SpamBlock",
+        "default_popup": "popup/popup.html"
+    },
+    
+    "content_scripts": [{
+        "matches": ["http://www.twitch.tv/*"],
+        "css": [],
+        "js": [
+            "js/settings.js",
+            "js/listener.js",
+            "js/injector.js"
+        ]
+    }],
+    
+    "icons": {
+        "16": "images/logo_32.png",
+        "64": "images/logo_64.png",
+        "128": "images/logo_128.png"
+    },
+    
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    
+    "web_accessible_resources": [
+        "js/filters.js",
+        "js/ui.js",
+        "js/bootstrap.js"
+    ]
+}
